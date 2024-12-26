@@ -7,7 +7,6 @@ const user = {
     name: "manisha",
     age: 20
 }
-
 function handleObject(anyObj) {
     console.log(`Username is ${anyObj.name} and age is ${anyObj.age}`)
 }
