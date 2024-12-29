@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advance functions</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Advance functions in js</h1>
+    <button id="start">Start</button>
+    <button id="stop" class="stop">stop</button>
+</body>
+
+<!-- setTimeout and clear timeout -->
+<!-- <script>
+
+    const sayHello = function () {
+        console.log("Hello Meynycha")
+    }
+
+    const changeTitle = function () {
+        console.log("Title changed")
+        document.querySelector('h1').innerHTML = "Chai aur code";
+    }
+    const changeMe = setTimeout(changeTitle, 2000)
+    let btn = document.querySelector('.stop').addEventListener('click', function () {
+        console.log('Stop');
+
+        clearTimeout(changeMe)
+    })
+</script> -->
+
+<!-- setInterval and clear Interval -->
+<!-- <script>
+    // setInterval(function () {
+    //     console.log("Hitesh", Date.now())
+    // }, 1000)
+
+    const syadate = function (str) {
+        console.log(str, Date.now())
+    }
+    let intervalId = null;
+
+    startBtn = document.getElementById("start")
+    stopBtn = document.getElementById('stop')
+
+    startBtn.addEventListener('click', function () {
+        if (!intervalId)
+            intervalId = setInterval(syadate, 1000, "Manisha")
+    })
+
+    stopBtn.addEventListener('click', function () {
+        if (intervalId) {
+            console.log("Event Stoped");
+            clearInterval(intervalId)
+            intervalId = null
+        }
+    })
+    // clearInterval(intervalId)
+</script> -->
+
+</html>

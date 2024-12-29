@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chai aur Closure</title>
+</head>
+
+<body>
+
+    <h3>Here is the real world problem of Closure and lexical scoping</h3>
+    <button id="green">Green</button>
+    <button id="orange">Orange</button>
+
+</body>
+
+<script>
+    // document.getElementById('green').addEventListener('click', function () {
+    //     document.body.style.backgroundColor = 'green'
+    // })
+    // document.getElementById('orange').addEventListener('click', function () {
+    //     document.body.style.backgroundColor = 'orange'
+    // })
+
+    function clickHandler(color) {
+        return function () {
+            document.body.style.backgroundColor = `${color}`
+
+        }
+    }
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+
+</script>
+
+</html>
